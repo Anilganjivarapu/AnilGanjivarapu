@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h2 {
+            font-size: 32px;
+            margin-top: 40px;
+        }
+        .service-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .service-box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px;
+            overflow: hidden;
+        }
+        .service-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .buttons-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .service-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #3498db; /* Default button color */
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: background-color 0.3s; /* Smooth transition effect */
+        }
+        .service-button:hover {
+            background-color: #e74c3c; /* New button color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Services</h1>
+    </header>
+    <h2>Select a Service</h2>
+    <div class="service-container">
+        <div class="service-box">
+            <img class="service-image" src="C:\Users\G ANIL\Downloads\csp\children.jpg" alt="Children ">
+        </div>
+        <div class="service-box">
+            <img class="service-image" src="C:\Users\G ANIL\Downloads\csp\4365858.jpg" alt="Pregnant and  Lactating Women">
+        </div>
+    </div>
+    <div class="buttons-container">
+        <button class="service-button" onclick="redirectToChildrenPage()">Children</button>
+        <button class="service-button" onclick="redirectToPregnantWomanPage()">Pregnant Woman</button>
+    </div>
+    
+    <script>
+        function redirectToChildrenPage() {
+            // Replace with the URL of the Children service page
+            window.location.href = "cr.html";
+        }
+        
+        function redirectToPregnantWomanPage() {
+            // Replace with the URL of the Pregnant Woman service page
+            window.location.href = "pregnantw.html";
+        }
+    </script>
+</body>
+</html>
